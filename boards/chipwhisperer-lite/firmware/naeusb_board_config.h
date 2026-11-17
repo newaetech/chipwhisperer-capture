@@ -317,6 +317,9 @@
 #define CW_USE_USART0
 #define USART_TARGET USART0
 
+#define USART_TX_BUF_SZ 256
+#define USART_RX_BUF_SZ 1024 * 2
+
 #define PIN_USART0_RXD	         (PIO_PA19_IDX)
 #define PIN_USART0_RXD_FLAGS      (PIO_PERIPH_A | PIO_DEFAULT)
 #define PIN_USART0_TXD	        (PIO_PA18_IDX)
