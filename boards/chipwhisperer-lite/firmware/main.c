@@ -155,6 +155,8 @@ int main(void)
 	while (true) {
         // if we've received stuff on USART, send it back to the PC
 		MPSSE_main_sendrecv_byte();
+		handle_cdc_txrx();
+		handle_sw_flow_control();
 	}
 	return 0;
 }
