@@ -46,6 +46,7 @@
 #include "naeusb_usart.h"
 #include "naeusb_nano.h"
 #include "naeusb_mpsse.h"
+#include "naeusb_usart_dma.h"
 
 //Serial Number - will be read by device ID
 char usb_serial_number[33] = "000000000000DEADBEEF";
