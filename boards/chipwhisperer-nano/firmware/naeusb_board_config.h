@@ -61,7 +61,6 @@
 /** Core definition */
 #define cortexm3
 
-#define CW_USE_USART1
 
 #define board_power(x)
 
@@ -246,6 +245,7 @@
 #define TWI0_CLK_FLAGS   (PIO_PERIPH_A | PIO_DEFAULT)
 
 
+#define CW_USE_USART1
 #define USART_TARGET USART1
 
 /** USART1 pin RX */
@@ -253,9 +253,11 @@
 #define PIN_USART1_RXD_IDX   (PIO_PA21_IDX)
 #define PIN_USART1_RXD_FLAGS (PIO_PERIPH_A | PIO_DEFAULT | PIO_PULLUP)
 /** USART1 pin TX */
-#define PIN_USART1_TXD (PIO_PA22A_TXD1)
+#define PIN_USART1_TXD (PIO_PA22_IDX)
 #define PIN_USART1_TXD_IDX   (PIO_PA22_IDX)
 #define PIN_USART1_TXD_FLAGS (PIO_PERIPH_A | PIO_DEFAULT)
+
+#define USART_SW_FLOW_CONTROL
 
 /* Parallel Data Capture (PDC) Module */
 #define PIO_CAPTURE_CCLK_IDX           PIO_PA23_IDX

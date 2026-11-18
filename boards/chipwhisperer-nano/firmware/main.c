@@ -76,20 +76,20 @@ int main (void)
 	udc_start();
 	
 	/* Parallel capture setup */
-	// cwnano_adc_init();
+	cwnano_adc_init();
 	
 	cpu_irq_enable();
 	
-	// naeusb_register_handlers();
-	// naeusart_register_handlers();
-	// nano_register_handlers();
-	// mpsse_register_handlers();
+	naeusb_register_handlers();
+	naeusart_register_handlers();
+	nano_register_handlers();
+	mpsse_register_handlers();
 
 	while (true) {
 		//sleepmgr_enter_sleep();
-		// MPSSE_main_sendrecv_byte();
-		// handle_cdc_txrx();
-		// handle_sw_flow_control();
+		MPSSE_main_sendrecv_byte();
+		handle_cdc_txrx();
+		handle_sw_flow_control();
 				
 	}
 	
