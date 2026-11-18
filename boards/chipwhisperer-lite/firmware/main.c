@@ -32,6 +32,8 @@
 #include "naeusb_mpsse.h"
 #include <string.h>
 
+#include "naeusb_usart_dma.h"
+
 //Serial Number - will be read by device ID
 char usb_serial_number[33] = "000000000000DEADBEEF";
 #ifndef RSTC_CR_KEY_PASSWD
